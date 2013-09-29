@@ -160,13 +160,24 @@ body {
     background: #38443D;
 
     text-align: center;
-    font-size: 2em;
-    padding-top: 75px;
 }
 
 .se a {
     text-decoration: none;
     color: #D8F2D7;
+    font-size: 2em
+}
+
+.about {
+    padding:25px; 
+}
+
+.refresh-all {
+    height:105px;
+    background-color:#232323;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 30px;
 }
 
 .main-about {
@@ -174,6 +185,8 @@ body {
     background: #D8F2D7;
     padding: 50px;
 }
+
+
 
 
 

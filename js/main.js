@@ -36,6 +36,11 @@ $( "#locale-refresh" ).bind("click", function() {
   $('div.locale').html(newLocale);
 });
 
+$( "#refresh-all" ).bind("click", function() {
+  $('div.main-character').html(newMainChar);
+  $('div.secondary-character').html(newSecondaryChar);
+  $('div.locale').html(newLocale);
+});
 
 
 var crazyQuirksArray = [
@@ -97,7 +102,7 @@ var crazyQuirksArray = [
   "is an NFL referee",
   "is a hoarder",
   "is a brony and it's eating him up inside",
-  "furry",
+  "is a furry",
   "got LASIK but it didn't take",
   "got lost in a corn maze as a child",
   "longboards everywhere",
