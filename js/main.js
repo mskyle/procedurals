@@ -2,20 +2,26 @@ var getRand = function(array) {
   return array[Math.floor(Math.random() * array.length)];
 };
 
-var newMainChar = function(jobsArray, quirksArray) {
+var newMainChar = function() {
   var job = getRand(crazyJobsArray);
   var quirk = getRand(crazyQuirksArray);
   return "Your main character is " + job + " who " + quirk + ".";
 };
 
-var newSecondaryChar = function(quirksArray) {
+var newSecondaryChar = function() {
   var quirk = getRand(crazyQuirksArray);
   return "The sidekick " + quirk + ".";
-}
+};
+
+var newLocale = function() {
+  var locale = getRand(crazyPlaceArray);
+  return "This is all happening in " + locale + ".";
+};
 
 $( document ).ready(function() {
   $('div.main-character').html(newMainChar);
   $('div.secondary-character').html(newSecondaryChar);
+  $('div.locale').html(newLocale);
 });
 
 $( "#main-character-refresh" ).bind("click", function() {
@@ -24,6 +30,10 @@ $( "#main-character-refresh" ).bind("click", function() {
 
 $( "#secondary-character-refresh" ).bind("click", function() {
   $('div.secondary-character').html(newSecondaryChar);
+});
+
+$( "#locale-refresh" ).bind("click", function() {
+  $('div.locale').html(newLocale);
 });
 
 
@@ -1104,7 +1114,7 @@ var crazyJobsArray = [
  "a surveying technician",
  "a switchboard operator",
  "a systems accountant",
- "a systems analyst, data processing",
+ "a systems analyst",
  "a tax accountant",
  "a tax auditor",
  "a tax collector",
@@ -1184,3 +1194,142 @@ var crazyJobsArray = [
  "a zoologist"
  ]
 
+crazyPlaceArray = [
+"Akron, Ohio",
+"Albuquerque, New Mexico",
+"Anaheim, California",
+"Anchorage, Alaska",
+"Arlington, Texas",
+"Arlington, Virginia",
+"Atlanta, Georgia",
+"Austin, Texas",
+"Bakersfield, California",
+"Baltimore, Maryland",
+"Baton Rouge, Louisiana",
+"Birmingham, Alabama",
+"Boise, Idaho",
+"Boston, Massachusetts",
+"Brooklyn, New York",
+"Buffalo, New York",
+"Chandler, Arizona",
+"Charlotte, North Carolina",
+"Chesapeake, Virginia",
+"Chicago, Illinois",
+"Chula Vista, California",
+"Cincinnati, Ohio",
+"Cleveland, Ohio",
+"Colorado Springs, Colorado",
+"Columbus, Ohio",
+"Corpus Christi, Texas",
+"Dallas, Texas",
+"Denver, Colorado",
+"Detroit, Michigan",
+"Durham, North Carolina",
+"El Paso, Texas",
+"Fort Wayne, Indiana",
+"Fort Worth, Texas",
+"Fresno, California",
+"Garland, Texas",
+"Glendale, Arizona",
+"Greensboro, North Carolina",
+"Henderson, Nevada",
+"Honolulu, Hawaii",
+"Houston, Texas",
+"Huntington, New York",
+"Indianapolis, Indiana",
+"Jacksonville, Florida",
+"Jersey City, New Jersey",
+"Kansas City, Missouri",
+"Laredo, Texas",
+"Las Vegas, Nevada",
+"Lexington-Fayette, Kentucky",
+"Lincoln, Nebraska",
+"Long Beach, California",
+"Los Angeles, California",
+"Lubbock, Texas",
+"Madison, Wisconsin",
+"Memphis, Tennessee",
+"Mesa, Arizona",
+"Miami, Florida",
+"Milwaukee, Wisconsin",
+"Minneapolis, Minnesota",
+"Modesto, California",
+"Montgomery, Alabama",
+"Nashville, Tennessee",
+"New Orleans, Louisiana",
+"Newark, New Jersey",
+"Norfolk, Virginia",
+"Oakland, California",
+"Oklahoma City, Oklahoma",
+"Omaha, Nebraska",
+"Orlando, Florida",
+"Philadelphia, Pennsylvania",
+"Phoenix, Arizona",
+"Pittsburgh, Pennsylvania",
+"Plano, Texas",
+"Portland, Oregon",
+"Queens, New York",
+"Raleigh, North Carolina",
+"Reno, Nevada",
+"Riverside, California",
+"Rochester, New York",
+"Sacramento, California",
+"San Antonio, Texas",
+"San Bernardino, California",
+"San Diego, California",
+"San Francisco, California",
+"San Jose, California",
+"Scottsdale, Arizona",
+"Seattle, Washington",
+"St. Louis, Missouri",
+"St. Paul, Minnesota",
+"St. Petersburg, Florida",
+"Stockton, California",
+"Tampa, Florida",
+"Toledo, Ohio",
+"Tucson, Arizona",
+"Tulsa, Oklahoma",
+"Virginia Beach, Virginia",
+"Washington, District of Columbia",
+"Wichita, Kansas",
+"a nineteenth-century hospital",
+"a safari park in Tanzania",
+"Boring, Oregon",
+"Climax, Michigan",
+"Dildo, Newfoundland",
+"Fart, Virginia",
+"French Lick, Indiana",
+"Gayville, South Dakota",
+"London circa 1666",
+"Medieval France",
+"New York (actually filmed in New York)",
+"New York (but it's filmed in Toronto)",
+"Precolumbian Arizona",
+"Toronto",
+"Why, Arizona",
+"the wild west",
+"Istanbul",
+"London",
+"Paris",
+"Dar Es Salaam",
+"Riyadh",
+"Hong Kong",
+"Beijing",
+"Tokyo",
+"Boulder, Colorado",
+"a small college town",
+"Keokuk, Iowa",
+"Northampton, Massachusetts",
+"a minor-league ballpark",
+"the Florida Keys",
+"Cabo San Lucas",
+"the Quebec-Ontario border",
+"outer space",
+"the planet Jupiter",
+"a spaceship traveling through a distant galaxy",
+"your mom's basement",
+"Copenhagen",
+"St. Petersburg immediately before the revolution",
+"Revolutionary France",
+"Colonial Williamsburg"
+]

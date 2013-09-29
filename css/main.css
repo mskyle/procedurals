@@ -120,7 +120,6 @@ body {
 }
 
 .top-panel {
-    background:green;
     height:150px;
     padding:12px
 }
@@ -128,9 +127,10 @@ body {
 .refresh-button {
     height:50px;
     text-align:center;
-    background: #A9ACC0;
     margin-top: 10px;
     padding:12px;
+    background:#232323;
+    color:white;
     
 }
 
@@ -142,10 +142,37 @@ body {
 
 .ne {
     float: right;
+    background:#D8F2D7;
 }
 
 .nw {
     float: left;
+    background: #9B9F8E;
+}
+
+.sw {
+        float: left;
+    background: #5B6158;
+}
+
+.se {
+    float: right;
+    background: #38443D;
+
+    text-align: center;
+    font-size: 2em;
+    padding-top: 75px;
+}
+
+.se a {
+    text-decoration: none;
+    color: #D8F2D7;
+}
+
+.main-about {
+    margin:40px;
+    background: #D8F2D7;
+    padding: 50px;
 }
 
 
