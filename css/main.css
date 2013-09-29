@@ -110,18 +110,18 @@ body {
 
 .magic-box {
   bottom: 0;
-  height: 500px;
+  height: 460px;
   left: 0;
   margin: auto;
   position: absolute;
   top: 0;
   right: 0;
-  width: 500px;
+  width: 460px;
 }
 
 .top-panel {
     height:150px;
-    padding:12px
+    padding:12px;
 }
 
 .refresh-button {
@@ -151,14 +151,13 @@ body {
 }
 
 .sw {
-        float: left;
+    float: left;
     background: #5B6158;
 }
 
 .se {
     float: right;
     background: #38443D;
-
     text-align: center;
 }
 
