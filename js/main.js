@@ -1061,7 +1061,7 @@ var crazyJobsArray = [
  "a set illustrator",
  "a sewing machine operator",
  "a sheet metal worker",
- "a ship carpenters and joiner",
+ "a ship carpenter and joiner",
  "a ship engineer",
  "a ship master",
  "a ship mate",
