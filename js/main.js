@@ -201,7 +201,7 @@ var crazyQuirksArray = [
   "is a drag queen",
   "is afraid of turkeys",
   "makes all her own clothes",
-  "is in arranged marriage",
+  "is in an arranged marriage",
   "was a mail order bride",
   "is a hypochondriac",
   "has an Imelda-Marcos-esque shoe collection",

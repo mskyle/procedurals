@@ -108,15 +108,12 @@ body {
   font-family:sans-serif;
 }
 
-.magic-box {
-  bottom: 0;
-  height: 460px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 460px;
+ul.boxes {
+    list-style: none;
+}
+
+li.boxes {
+    display:inline;
 }
 
 .top-panel {
@@ -141,7 +138,7 @@ body {
 }
 
 .ne {
-    float: right;
+    float: left;
     background:#D8F2D7;
 }
 
@@ -156,7 +153,7 @@ body {
 }
 
 .se {
-    float: right;
+    float: left;
     background: #38443D;
     text-align: center;
 }

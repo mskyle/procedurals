@@ -22,41 +22,45 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="magic-box">
-            <div class="row">
-                <div class="option-box nw">
-                    <div class="top-panel main-character">    
-                    </div>
-                    <div class="refresh-button" id="main-character-refresh">
+        <div class="big-box">
+            <ul class="boxes">
+                <li>
+                    <div class="option-box nw">
+                        <div class="top-panel main-character"></div>
+                        <div class="refresh-button" id="main-character-refresh">
                          Nope, let's try again.
+                        </div>
                     </div>
-                </div>
-                <div class="option-box ne">
-                    <div class="top-panel secondary-character">    
+                </li>
+            
+                <li>
+                    <div class="option-box ne">
+                        <div class="top-panel secondary-character"></div>
+                        <div class="refresh-button" id="secondary-character-refresh">
+                             Nope, let's try again.
+                        </div>
                     </div>
-                    <div class="refresh-button" id="secondary-character-refresh">
-                         Nope, let's try again.
+                </li>
+                <li>
+                    <div class="option-box sw">
+                        <div class="top-panel locale"></div>
+                        <div class="refresh-button" id="locale-refresh">
+                             Nope, let's try again.
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="option-box sw">
-                    <div class="top-panel locale">    
+                </li>
+                <li>
+                    <div class="option-box se">
+                        <div class="refresh-all" id="refresh-all">
+                            Let's start over.
+                        </div>
+                        <div class="about">
+                            <a href="about.html">WHAT</a>
+                        </div>
                     </div>
-                    <div class="refresh-button" id="locale-refresh">
-                         Nope, let's try again.
-                    </div>
-                </div>
-                <div class="option-box se">
-                    <div class="refresh-all" id="refresh-all">
-                        Let's start over.
-                    </div>
-                    <div class="about">
-                        <a href="about.html">WHAT</a>
-                    </div>
-
-                </div>
-            </div>
+                </li>
+            </ul>
+        </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
