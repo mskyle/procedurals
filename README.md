@@ -30,3 +30,4 @@ Want to help make this even better? Fork it and add more job ideas, quirk ideas,
 * That guy with the racist puppets? Jeff?
 * Most jokes involving violence
 * Most of what Adam Sandler has done over the last ten years
+* Jokes about how stupid $type_of_people are 
